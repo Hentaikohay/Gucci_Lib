@@ -1,0 +1,31 @@
+#pragma once
+#ifndef prettyPrint_H
+#define prettyPrint_H
+enum ConsoleColor {
+	Black = 0,
+	Blue = 1,
+	Green = 2,
+	Cyan = 3,
+	Red = 4,
+	Magenta = 5,
+	Brown = 6,
+	LightGray = 7,
+	DarkGray = 8,
+	LightBlue = 9,
+	LightGreen = 10,
+	LightCyan = 11,
+	LightRed = 12,
+	LightMagenta = 13,
+	Yellow = 14,
+	White = 15
+};
+
+void txtColor(enum::ConsoleColor);	//	после вызова функции, следующий выведенный текст будет 
+void txtColor(int);					//	заданного цвета
+
+void print_color(const char, enum::ConsoleColor color);	// раскрашивает символ в заданный цвет. След. символ
+														// будет белым
+
+void print_color(std::string, enum::ConsoleColor);		// раскрашивает текст в заданный цвет 
+														// будет белым
+#endif
